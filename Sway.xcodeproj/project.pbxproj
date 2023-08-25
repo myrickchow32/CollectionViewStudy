@@ -103,7 +103,7 @@
 		85E435CB2857B89500052D42 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85E435CE2857BD5B00052D42 /* FoodViewController */,
+				85E435BB2857B88900052D42 /* FoodViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,14 +127,6 @@
 				852B258728755E2D003E1384 /* VeganRestaurantModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		85E435CE2857BD5B00052D42 /* FoodViewController */ = {
-			isa = PBXGroup;
-			children = (
-				85E435BB2857B88900052D42 /* FoodViewController.swift */,
-			);
-			path = FoodViewController;
 			sourceTree = "<group>";
 		};
 		85E435D12857C1E000052D42 /* Extentions */ = {
