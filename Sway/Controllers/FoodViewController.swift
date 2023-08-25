@@ -22,7 +22,6 @@ class FoodViewController: UIViewController {
         let filter = FilterHeaderView()
         filter.translatesAutoresizingMaskIntoConstraints = false
         filter.isHidden = true
-        filter.delegate = self
         return filter
     }()
     
@@ -116,12 +115,6 @@ extension FoodViewController {
     }
 }
 
-extension FoodViewController: FilterActionDelegate {
-    func didTabFilterBTN() {
-        print("Open Filter")
-    }
-}
-
 extension FoodViewController : UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -171,7 +164,6 @@ extension FoodViewController : UICollectionViewDelegate,UICollectionViewDataSour
             switch indexPath.section {
             case 2 :
                 let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: FilterHeaderView.headerIdentifier, for: indexPath) as! FilterHeaderView
-                header.delegate = self
                 return header
             default :
                 let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: VeganSectionHeaderView.headerIdentifier, for: indexPath) as! VeganSectionHeaderView
