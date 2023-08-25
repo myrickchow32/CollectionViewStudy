@@ -75,9 +75,7 @@ class FoodViewController: UIViewController {
         view.addSubview(navigationView)
         view.addSubview(collectionView)
         view.addSubview(filterHeaderView)
-    }
-    
-    func setUpConstrains(){
+        
         collectionView.setUp(to: view)
         NSLayoutConstraint.activate([
             navigationView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -91,8 +89,7 @@ class FoodViewController: UIViewController {
             filterHeaderView.heightAnchor.constraint(equalToConstant: 45),
         ])
     }
-
-
+    
 }
 
 extension FoodViewController {
