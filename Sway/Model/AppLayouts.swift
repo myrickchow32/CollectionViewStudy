@@ -9,9 +9,8 @@ import Foundation
 import UIKit
 
 class AppLayouts {
-    static let shared = AppLayouts()
     
-    func foodBannerSection()-> NSCollectionLayoutSection {
+    static func foodBannerSection()-> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
@@ -38,7 +37,7 @@ class AppLayouts {
         return section
     }
     
-    func foodCategorySection()-> NSCollectionLayoutSection {
+    static func foodCategorySection()-> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
@@ -53,7 +52,7 @@ class AppLayouts {
         return section
     }
     
-    func restaurantsListSection()->NSCollectionLayoutSection {
+    static func restaurantsListSection()->NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
@@ -73,7 +72,7 @@ class AppLayouts {
         return section
     }
     
-    func VeganSectionLayout() -> NSCollectionLayoutSection {
+    static func VeganSectionLayout() -> NSCollectionLayoutSection {
         let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
         
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .absolute(170), heightDimension: .absolute(260)), subitems: [item])

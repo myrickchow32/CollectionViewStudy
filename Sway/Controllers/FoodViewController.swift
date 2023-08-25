@@ -102,13 +102,13 @@ extension FoodViewController {
         let layout = UICollectionViewCompositionalLayout {sectionIndex,enviroment in
             switch sectionIndex {
             case 0 :
-                return AppLayouts.shared.foodBannerSection()
+                return AppLayouts.foodBannerSection()
             case 1 :
-                return AppLayouts.shared.foodCategorySection()
+                return AppLayouts.foodCategorySection()
             case 2 :
-                return AppLayouts.shared.restaurantsListSection()
+                return AppLayouts.restaurantsListSection()
             default:
-                return AppLayouts.shared.VeganSectionLayout()
+                return AppLayouts.VeganSectionLayout()
             }
         }
         layout.register(SectionDecorationView.self, forDecorationViewOfKind: "SectionBackground")
