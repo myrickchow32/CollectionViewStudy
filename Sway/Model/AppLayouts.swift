@@ -22,7 +22,7 @@ class AppLayouts {
         section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
         section.orthogonalScrollingBehavior = .groupPagingCentered
         
-//         PLay with some animation and scrollOffest
+        // Play with some animation and scrollOffest
         section.visibleItemsInvalidationHandler = { (items, offset, environment) in
             items.forEach { item in
                 let distanceFromCenter = abs((item.frame.midX - offset.x) - environment.container.contentSize.width / 2.0)
@@ -33,7 +33,6 @@ class AppLayouts {
             }
         }
 
-        
         return section
     }
     
