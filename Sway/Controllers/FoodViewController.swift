@@ -50,7 +50,6 @@ class FoodViewController: UIViewController {
         super.viewDidLoad()
         configureUI()
         setUpNavigation()
-        setUpConstrains()
         configureCompositionalLayout()
     }
     
